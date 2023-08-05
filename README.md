@@ -1,2 +1,2 @@
 # library-system-node
- A backend server for online library system using Node JS, Express, SQL & Sequelize orm
+ An Online Library backend server developed using Node, Express, SQL & Sequelize ORM
