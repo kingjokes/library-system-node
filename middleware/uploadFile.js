@@ -1,5 +1,4 @@
-//middleware to upload excel files to the server
-//and handles form data type
+ 
 
 const multer = require("multer");
 const imageFilter = (req, file, cb) => {

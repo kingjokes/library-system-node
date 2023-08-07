@@ -48,7 +48,7 @@ const login = async (req, res) => {
 
 
         if (query) {
-            // console.log(query.password, req.body.password)
+            
             let checker = await bcrypt.compare(req.body.password, query.password)
             if (checker) {
                 const accessToken = await jwt.sign(

@@ -13,7 +13,7 @@ const login = async (req, res) => {
 
         let query = await Admin.findOne({where: {email: req.body.email}})
         if (query) {
-            // console.log(query.password, req.body.password)
+           
             let checker = await bcrypt.compare(req.body.password, query.password)
             if (checker) {
                 const accessToken = await jwt.sign(

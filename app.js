@@ -13,7 +13,7 @@ const userRoute = require('./routes/userRoutes')
 const adminRoute = require('./routes/adminRoutes')
 
 const app = express()
-// const route = require('./routes/routes')
+
 require('dotenv').config()
 
 
@@ -30,7 +30,7 @@ app.listen(process.env.PORT || 4000, async (req, res) => {
         await sequelize
             .sync({alter: true})
             .then((result) => {
-                // console.log(result);
+                 
                 console.log("All models were synchronized successfully.");
             })
             .catch((err) => {
